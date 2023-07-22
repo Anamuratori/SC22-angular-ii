@@ -1,13 +1,12 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title>{{recipe.name | uppercase}}</mat-card-title>
+    <mat-card-title>{{recipe.name}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image [src]="recipe.image">
   <mat-card-content>
     <p>{{recipe.description}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+    <button mat-button>VIEW</button>
   </mat-card-actions>
 </mat-card>

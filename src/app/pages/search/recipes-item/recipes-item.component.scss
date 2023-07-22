@@ -1,3 +1,30 @@
 .example-card {
     max-width: 200px;
+    height: 450px;  
+    background-color: rgb(245, 245, 235);
+    margin-bottom: 30px;
 }
+
+.mat-mdc-card-header {
+    display: flex;
+    padding: 16px 16px 0;
+    justify-content: center;
+
+}
+
+.mat-mdc-card-title{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 20px;
+    height: 50px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.mat-mdc-card-content {
+    margin-top: 20px;
+    display: block;
+    padding: 0 16px;
+    text-align: center;
+}
+
