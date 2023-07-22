@@ -1,13 +1,13 @@
-<mat-toolbar color="accent">
+<mat-toolbar color="accent" class="header">
     <button mat-icon-button >
-      <mat-icon>blender</mat-icon>
     </button>
-    <span>Livro de Receitas</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button >
-      <mat-icon>add</mat-icon>
-    </button>
-    <button mat-icon-button >
-      <mat-icon>search</mat-icon>
-    </button>
+    <span>CookBook</span>
+    <div>
+      <button mat-icon-button >
+        <mat-icon>add</mat-icon>
+      </button>
+      <button mat-icon-button >
+        <mat-icon (click)="goToSearch()">search</mat-icon>
+      </button>
+    </div>
   </mat-toolbar>
