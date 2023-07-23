@@ -14,4 +14,12 @@ export class HeaderComponent {
     this._router.navigate(['search'])
   }
 
+  goToNew() {
+    this._router.navigate(['new'])
+  }
+
+  goToHome() {
+    this._router.navigate([''])
+  }
+
 }

@@ -6,7 +6,7 @@ import { NewRecipeComponent } from './new-recipe/new-recipe.component';
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent
+    path:'', component: HomeComponent
   },
   {
     path: 'search', component: SearchComponent

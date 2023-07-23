@@ -1,15 +1,13 @@
-.carousel-slide{
-    opacity: 50%;
+.carousel-personal{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    position: fixed;
-}
-
 .carousel-item{
-    /*position: fixed;*/
+    width: 600px;
 }
 
-.carousel-caption{
-    
+.carousel-caption__title{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
 }

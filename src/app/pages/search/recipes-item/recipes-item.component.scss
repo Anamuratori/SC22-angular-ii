@@ -2,7 +2,7 @@
     max-width: 200px;
     height: 450px;  
     background-color: rgb(245, 245, 235);
-    margin-bottom: 30px;
+    margin-bottom: 0.1rem;
 }
 
 .mat-mdc-card-header {
@@ -28,3 +28,7 @@
     text-align: center;
 }
 
+.mdc-card__actions {
+    position: absolute;
+    bottom: 0;
+}
