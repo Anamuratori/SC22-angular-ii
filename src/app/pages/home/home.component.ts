@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Recipe } from 'src/app/model/recipe';
-import { RecipesListService } from '../search/recipes-list/recipes-list.service';
 import { take } from 'rxjs';
+import { PagesService } from '../pages.service';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +12,10 @@ export class HomeComponent {
 
   public recipes: Recipe[] = [];
 
-  constructor(private _service: RecipesListService) { }
+  constructor(private _service: PagesService) { }
 
   ngOnInit(): void {
     this.getRecipes();
-
   }
 
   public getRecipes(searchValue: string = ''): void {

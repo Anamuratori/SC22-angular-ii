@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { RecipesListService } from './recipes-list.service';
 import { take } from 'rxjs';
 import { Recipe } from 'src/app/model/recipe';
+import { PagesService } from '../../pages.service';
 
 @Component({
   selector: 'app-recipes-list',
@@ -12,7 +12,7 @@ export class RecipesListComponent implements OnInit {
 
   public recipes: Recipe[] = [];
 
-  constructor(private _service: RecipesListService) { }
+  constructor(private _service: PagesService) { }
 
   ngOnInit(): void {
     this.getRecipes();
@@ -27,7 +27,5 @@ export class RecipesListComponent implements OnInit {
       this.recipes=response;
     })
   }
-
-
 
 }

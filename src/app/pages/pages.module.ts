@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { RecipesItemComponent } from './search/recipes-item/recipes-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RecipeDetailsComponent } from './search/recipe-details/recipe-details.component';
 
 
 
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     FilterComponent,
     RecipesListComponent,
     RecipesItemComponent,
+    RecipeDetailsComponent,
   ],
   imports: [
     CommonModule,
