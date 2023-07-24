@@ -12,8 +12,9 @@ import {MatCardModule} from '@angular/material/card';
 import { RecipesItemComponent } from './search/recipes-item/recipes-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RecipeDetailsComponent } from './search/recipe-details/recipe-details.component';
-
-
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,10 @@ import { RecipeDetailsComponent } from './search/recipe-details/recipe-details.c
     PagesRoutingModule,
     HttpClientModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule, 
+    MatInputModule,
+    ReactiveFormsModule
   ],
   exports: [
     PagesComponent
