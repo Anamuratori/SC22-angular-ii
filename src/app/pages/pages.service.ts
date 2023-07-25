@@ -21,4 +21,16 @@ export class PagesService {
   public getRecipeById(id: number): Observable<Recipe> {
     return this._http.get<Recipe>(`${this._url}/${id}`);
   }
+
+  public postRecipe (recipe: Recipe): Observable<Recipe> {
+    return this._http.post<Recipe>(this._url, recipe);
+  }
+
+  public putRecipe (id: number, recipe: Recipe): Observable<Recipe> {
+    return this._http.put<Recipe>(`${this._url}/${id}`, recipe);
+  }
+
+  public deleteRecipe (id: number) {
+    return this._http.delete<void>(`${this._url}/${id}`);
+  }
 }

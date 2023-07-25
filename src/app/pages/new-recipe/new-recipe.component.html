@@ -1,51 +1,46 @@
-<div>
-    <form [formGroup]="recipeForm">
-<p>
-<mat-form-field>
-    <mat-label>Name</mat-label>
-    <input matInput formControlName="name">
-  </mat-form-field>
-</p>
-<p>
-  <mat-form-field>
-    <mat-label>Description</mat-label>
-    <textarea matInput formControlName="description"></textarea>
-  </mat-form-field>
-</p>
-<p>
-  <mat-form-field>
-    <mat-label>Image URL</mat-label>
-    <input matInput formControlName="image">
-  </mat-form-field>
-</p>
-<p>
-  <mat-form-field>
-    <mat-label>Author</mat-label>
-    <input matInput formControlName="author">
-  </mat-form-field>
-</p>
-<p>
-  <mat-form-field>
-    <mat-label>Ingredients</mat-label>
-    <textarea matInput formControlName="ingredients"></textarea>
-  </mat-form-field>
-</p>
-<p>
-  <mat-form-field>
-    <mat-label>Method</mat-label>
-    <textarea matInput formControlName="method"></textarea>
-  </mat-form-field>
-</p>
+<div class="content">
+  <form [formGroup]="recipeForm">
+    <p>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-label>Image URL</mat-label>
+        <input matInput formControlName="image">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-label>Author</mat-label>
+        <input matInput formControlName="author">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-label>Ingredients</mat-label>
+        <textarea matInput formControlName="ingredients"></textarea>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-label>Method</mat-label>
+        <textarea matInput formControlName="method"></textarea>
+      </mat-form-field>
+    </p>
 
-<button
-    mat-flat-button
-    color="primary"
-    [disabled]="recipeForm.invalid || recipeForm.pristine"
-    type="submit"
-  >
-    Add
-  </button>
-  <button mat-stroked-button color="primary" type="reset">Reset</button>
+    <button mat-flat-button color="primary" [disabled]="recipeForm.invalid || recipeForm.pristine" type="submit">
+      Add
+    </button>
+    <button mat-stroked-button color="warn" type="reset">Reset</button>
 
-</form>
+  </form>
 </div>

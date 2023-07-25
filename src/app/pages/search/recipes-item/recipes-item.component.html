@@ -6,7 +6,11 @@
   <mat-card-content>
     <p>{{recipe.description}}</p>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-button [routerLink]="['/search', recipe.id]">VIEW</button>
-  </mat-card-actions>
+  <div class="content-actions">
+    <mat-card-actions>
+      <button mat-button [routerLink]="['/search', recipe.id]">VIEW</button>
+        <button mat-button [routerLink]="['/edit', recipe.id]">EDIT</button>
+        <button mat-button [routerLink]="['/delete', recipe.id]">DELETE</button>
+    </mat-card-actions>
+  </div>
 </mat-card>
