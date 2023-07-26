@@ -1,5 +1,5 @@
 <div class="content">
-  <form [formGroup]="recipeForm">
+  <form [formGroup]="recipeForm" (ngSubmit)="editMode? putRecipe() : postRecipe()">
     <p>
       <mat-form-field>
         <mat-label>Name</mat-label>
@@ -37,8 +37,8 @@
       </mat-form-field>
     </p>
 
-    <button mat-flat-button color="primary" [disabled]="recipeForm.invalid || recipeForm.pristine" type="submit">
-      Add
+    <button mat-flat-button color="primary" [disabled]="recipeForm.invalid || recipeForm.pristine" type="submit" >
+      {{ editMode ? "Edit" : "Add" }}
     </button>
     <button mat-stroked-button color="warn" type="reset">Reset</button>
 

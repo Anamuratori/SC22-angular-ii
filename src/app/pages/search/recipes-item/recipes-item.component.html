@@ -10,7 +10,7 @@
     <mat-card-actions>
       <button mat-button [routerLink]="['/search', recipe.id]">VIEW</button>
         <button mat-button [routerLink]="['/edit', recipe.id]">EDIT</button>
-        <button mat-button [routerLink]="['/delete', recipe.id]">DELETE</button>
+        <button mat-button (click)="deleteRecipe(recipe.id)" >DELETE</button>
     </mat-card-actions>
   </div>
 </mat-card>

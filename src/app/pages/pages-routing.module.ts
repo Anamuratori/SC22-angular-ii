@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { NewRecipeComponent } from './new-recipe/new-recipe.component';
 import { RecipeDetailsComponent } from './search/recipe-details/recipe-details.component';
+import { PagesGuard } from './guards/pages-guard.service';
 
 const routes: Routes = [
   {
@@ -16,7 +17,10 @@ const routes: Routes = [
     path: 'search/:id', component: RecipeDetailsComponent
   },
   {
-    path: 'new', component: NewRecipeComponent
+    path: 'new', component: NewRecipeComponent, canDeactivate:[PagesGuard]
+  },
+  {
+    path: 'edit/:id', component: NewRecipeComponent
   }
 ];
 
